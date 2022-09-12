@@ -133,10 +133,6 @@ class EulerSolver(_BasedODE):
     interp : {`linear`, `cubic`} or Callable, optional, default: `linear`
         Функция интерполяции для проекции решения с сетки в моменты времени `t`.
 
-    Methods
-    -------
-    __call__
-
     See Also
     --------
     SimpsonSolver : ODE solver implementation with Smipson integrate approximation.
@@ -167,10 +163,6 @@ class SimpsonSolver(_BasedODE):
         Функция, строящая сетку, на которой будет решаться задача Коши.
     interp : {`linear`, `cubic`} or Callable, optional, default: `linear`
         Функция интерполяции для проекции решения с сетки в моменты времени `t`.
-
-    Methods
-    -------
-    __call__
 
     See Also
     --------
@@ -203,10 +195,6 @@ class RK4Solver(_BasedODE):
         Функция, строящая сетку, на которой будет решаться задача Коши.
     interp : {`linear`, `cubic`} or Callable, optional, default: `linear`
         Функция интерполяции для проекции решения с сетки в моменты времени `t`.
-
-    Methods
-    -------
-    __call__
 
     See Also
     --------

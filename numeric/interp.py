@@ -31,11 +31,6 @@ class PolyInt():
     values : (n, ) ndarray
         The values of the function in the nodes of the grid in which there are values of the interpolated function.
 
-    Methods
-    -------
-    __call__(x)
-
-
     See Also
     --------
     LinearSplines1d : Linear splines interpolation implementation.
@@ -48,6 +43,19 @@ class PolyInt():
         self.values = values
 
     def __call__(self, x: np.ndarray) -> np.ndarray:
+        """Evalute Lagrange polynome.
+        
+        Parameters
+        ----------
+        x : (n, ) np.ndarray
+            Array of function argument's values.
+
+        Returns
+        -------
+        y(t) : (n, ) ndarray
+            The values of the function in `x` arguments.
+
+        """
         values = self.values
         nodes = self.nodes
         return sum([yk*_Lk(nodes, k)(x) for k, yk in enumerate(values)])
@@ -68,6 +76,19 @@ class _BaseSplines1d(metaclass=ABCMeta):
 
     @abstractmethod
     def __call__(self, x: np.ndarray) -> np.ndarray:
+        """Evaluate the piecewise polynomial or its derivative.
+
+        Parameters
+        ----------
+        x : (n, ) np.ndarray
+            Array of function argument's values.
+
+        Returns
+        -------
+        y(t) : (n, ) ndarray
+            The values of the function in `x` arguments.
+
+        """
         pass
 
 
@@ -81,10 +102,6 @@ class LinearSplines1d(_BaseSplines1d):
         Grid nodes in which there are values of the interpolated function.
     values : (n, ) ndarray
         The values of the function in the nodes of the grid in which there are values of the interpolated function.
-
-    Methods
-    -------
-    __call__(x)
 
 
     See Also
@@ -127,11 +144,6 @@ class CubicHermiteSplines1d(_BaseSplines1d):
         Grid nodes in which there are values of the interpolated function.
     values : (n, ) ndarray
         The values of the function in the nodes of the grid in which there are values of the interpolated function.
-
-    Methods
-    -------
-    __call__(x)
-
 
     See Also
     --------

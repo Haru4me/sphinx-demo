@@ -17,6 +17,7 @@ furo = "^2022.6.21"
 loguru = "^0.6.0"
 ipykernel = "^6.15.2"
 pydata-sphinx-theme = "^0.10.1"
+numpydoc = "^1.4.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
