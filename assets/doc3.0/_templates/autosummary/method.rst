@@ -1,7 +1,5 @@
-:orphan:
+{{ name | escape | underline}}
 
-{{ fullname }}
-{{ underline }}
 
 .. currentmodule:: {{ module }}
 

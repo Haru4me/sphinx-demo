@@ -27,6 +27,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
+    'sphinx_remove_toctrees',
     'numpydoc'
 ]
 
@@ -49,9 +50,11 @@ html_favicon = './_static/file_type_python_icon_130221_1.ico'
 
 todo_include_todos = True
 utosummary_generate = True
-autosummary_generate_overwrite = True
+autosummary_generate_overwrite = False
 
 numpydoc_show_class_members = False
 numpydoc_class_members_toctree = False
 numpydoc_show_inherited_class_members = False
 numpydoc_attributes_as_param_list = True
+
+remove_from_toctrees = ["_subfiles/numeric/*"]

@@ -6,19 +6,14 @@
 Welcome to numeric's documentation!
 ===================================
 
-.. autosummary::
-   :toctree: .
-   
-   numeric
-
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :titlesonly:
    :caption: Contents:
 
-   install
-   start
-   numeric
+   install.rst
+   start.rst
+   _subfiles/numeric.rst
 
 
 

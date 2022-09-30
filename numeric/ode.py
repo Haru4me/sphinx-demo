@@ -66,7 +66,8 @@ class _BasedODE(metaclass=ABCMeta):
         pass
 
     def __call__(self, t):
-        """
+        """Calculate solution for `t`
+        
         Parameters
         ----------
         t : (n, ) np.ndarray

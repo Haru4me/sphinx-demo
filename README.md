@@ -1,6 +1,19 @@
 # Инструкция по созданию документации с использованием `sphinx`
 
-## Первый подход
+## Полезные ссылки
+
+- [Getting Started](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+- [Sphinx autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#module-sphinx.ext.autodoc)
+- [Sphinx autosummary](https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html#module-sphinx.ext.autosummary)
+- [Sphinx extensions](https://www.sphinx-doc.org/en/master/usage/extensions/index.html#extensions)
+
+## Можно начать так
+
+```bash
+sphinx-quickstart
+```
+
+## Создание с готовым autodoc
 
 ```bash
 $ mkdir doc
@@ -10,7 +23,7 @@ $ rm make.bat
 $ make html
 ```
 
-## Улучшим простой вариант
+## Улучшим
 
 1. Добавим настройки в `setup.py`
 2. Добавим иконку и лого в `_static`
@@ -26,4 +39,3 @@ $ make html
     - Сами задаем стиль оформления `autodoc` и `autosummary`
     - Можно не хранить нестатические `rst` в репозитории, а сразу генериить все по заданным шаблонам.
     - Нужно разбираться
-3. Покрытие документации и тесты на документацию (последнее хз)
