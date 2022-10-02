@@ -22,6 +22,7 @@ numpydoc = "^1.4.0"
 jupyter = "^1.0.0"
 notebook = "^6.4.12"
 imageio = "^2.22.0"
+sphinx-remove-toctrees = "^0.0.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
