@@ -3,10 +3,12 @@
 ## Полезные ссылки
 
 - [Numpydoc style guide](https://numpydoc.readthedocs.io/en/stable/format.html)
-- [Getting Started](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+- [Sphinx Getting Started](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+- [Sphinx Config Setup](https://www.sphinx-doc.org/en/master/usage/configuration.html)
 - [Sphinx autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#module-sphinx.ext.autodoc)
 - [Sphinx autosummary](https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html#module-sphinx.ext.autosummary)
 - [Sphinx extensions](https://www.sphinx-doc.org/en/master/usage/extensions/index.html#extensions)
+- [Numpydoc extention](https://numpydoc.readthedocs.io/en/latest/install.html)
 
 ## Можно начать так
 
