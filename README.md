@@ -10,13 +10,13 @@
 - [Sphinx extensions](https://www.sphinx-doc.org/en/master/usage/extensions/index.html#extensions)
 - [Numpydoc extention](https://numpydoc.readthedocs.io/en/latest/install.html)
 
-## Можно начать так
+## Создание документации через quickstart
 
 ```bash
 sphinx-quickstart
 ```
 
-## Создание с готовым autodoc
+## Создание с готовым autodoc через sphinx-apidoc
 
 ```bash
 $ mkdir doc
