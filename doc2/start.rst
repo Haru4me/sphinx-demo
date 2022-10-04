@@ -9,13 +9,13 @@ Some pics
 Pic №1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../assets/waves.gif
+.. image:: _static/waves.gif
    :align: center
 
 Pic №2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../assets/diffusion.gif
+.. image:: _static/diffusion.gif
    :align: center
 
 Some code

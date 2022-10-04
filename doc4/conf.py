@@ -26,9 +26,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.viewcode',
-    'sphinx.ext.todo',
     'sphinx_remove_toctrees',
-    'numpydoc'
+    'numpydoc',
+    'myst_parser'
 ]
 
 templates_path = ['_templates']
@@ -52,9 +52,14 @@ todo_include_todos = True
 utosummary_generate = True
 autosummary_generate_overwrite = False
 
-numpydoc_show_class_members = False
-numpydoc_class_members_toctree = False
-numpydoc_show_inherited_class_members = False
+numpydoc_show_class_members = True
+numpydoc_class_members_toctree = True
+numpydoc_show_inherited_class_members = True
 numpydoc_attributes_as_param_list = True
 
 remove_from_toctrees = ["_subfiles/numeric/*"]
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}

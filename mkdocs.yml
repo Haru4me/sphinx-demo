@@ -1,0 +1,11 @@
+site_name: numeric-docs
+theme:
+  name: material
+  highlightjs: true
+nav:
+    - Home: 'index.md'
+    - 'install.md'
+    - 'start.md'
+markdown_extensions:
+    - toc:
+        baselevel: 2
